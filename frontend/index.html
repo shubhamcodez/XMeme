@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>XMeme</title>
+        <link rel="icon" href="favicon.ico">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        
+        <meta name ="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+       
+    <div id="page-container"> 
+       
+        <header><h1 class="title">X-Meme😹</h1></header>
+        
+        <nav class="navbar is-transparent">
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                  <a class="navbar-item" href="/">
+                    Home
+                  </a>
+                 <a class="navbar-item" onclick="about()">
+                    About
+                  </a>
+                  <a class="navbar-item" href="https://shubhamcodezportfolio.netlify.app/">
+                    Contact
+                  </a> 
+                </div>
+            </div>      
+        </nav>
+
+        <div class="submission"><button onclick="showForm()" class="button is-dark">I would like to submit my own</button></div>
+        <form class="meme-form">
+            
+            <label class="label">Name</label>
+            <input class="input" type="text" id="name" name="name" placeholder="Enter your Name">
+            
+            <label class="label">URL</label>
+            <input class="input" type="url" id="url" name="url" placeholder="URl of the meme">
+               
+            <label class="label">Caption</label>
+            <textarea class="input" type="text" name="caption" id="caption" placeholder="Add a creative caption"></textarea>
+            
+            <div class="submit_but"><button class="button is-primary">Submit</button></div>
+            <div class="submitting_but"><button class="button is-primary is-loading">Loading</button></div>
+        </form>                  
+    <div class="meme-display"></div>    
+    <div id="content-wrap"></div>
+        <div class='footer'>
+        Created by Shubham Singh. Feb 2021 <br>
+        <a href="https://www.linkedin.com/in/shubhamcodez/" class="fa fa-linkedin"></a>
+        <a href="https://github.com/shubhamcodez" class="fa fa-github"></a>
+        <a href="https://shubhamcodezportfolio.netlify.app/" class="fa fa-dribbble"></a>
+        </div>   
+    </div>
+    <script src="client.js"></script>   
+    
+    </body>
+</html>

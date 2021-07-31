@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>XMeme</title>
+        <link rel="icon" href="https://ibb.co/XS9ptMc">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        
+        <meta name ="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+       
+        <div id="page-container"> 
+       
+        <header><h1 class="title">X-Meme 😹</h1></header>
+        
+        <nav class="navbar is-transparent">
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                  <a class="navbar-item" href="/">
+                    Home
+                  </a>
+                 <a class="navbar-item" onclick="about()">
+                    About
+                  </a>
+                </div>
+            </div>      
+        </nav>
+        <img src="favicon.jpg" class="Logo">
+        <p style="margin: 0 auto; padding-left: 15%;">
+            X-Meme is a meme stream built by Shubham Singh. X-Meme tries to bring a collection of memes that everybody loves.
+            <br>A platform that lets you upload and share memes built by Meme lovers for Meme lovers.
+        </p>
+        
+        <h2 style="text-align: center; padding-top: 30px;">Features of X-meme 1. 0. 0</h2>
+        <ul style="text-align: center;">
+            <li>Upload Memes by entering URL</li>
+            <li>GET method to display all memes on endpoint /memes/</li>
+            <li>GET method to display a single meme on endpoint /memes/id</li>
+            <li>Edit a meme using Patch Method on endpoint /memes/id</li>  
+        </ul>
+
+        <h2 style="text-align: center; padding-top: 30px;">Proposed features of X-meme 1. 1. 0</h2>
+        <ul style="text-align: center;">
+            <li>Create meme on the page itself</li>
+            <li>Edit button to edit a meme using patch request</li>
+            <li>Like button to display count of likes per meme</li>
+            <li>Sort by popularity (past 24 hours) feature</li>  
+        </ul>
+        <div style="padding-bottom: 50px;"></div>
+    </body>
+</html>   
