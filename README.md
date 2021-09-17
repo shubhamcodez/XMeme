@@ -4,7 +4,7 @@ Frontend : HTML, CSS, js
 
 npm Packages : express, cors, monk, express-rate-limit, morgan, nodemon.
 
-XMeme is a meme stream application. A platform that lets you upload and share memes built by Meme lovers for Meme lovers.
+XMeme is a open-source meme machine for everybody. A platform that lets you upload and share memes built by Meme lovers for Meme lovers while rewarding the creators for making us laugh.
 
 
 <h2 style="text-align: center; padding-top: 30px;">Features of X-meme 1. 0. 0</h2>
