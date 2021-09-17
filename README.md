@@ -29,3 +29,14 @@ OPMeme is a open-source meme machine for everybody. A platform that lets you upl
 
 ### Run live-server
 >liveserver
+
+
+## Instructions to Contribute to Open Meme Project:
+
+1. Fork the repository
+2. Make changes, run tests and make sure it's running people
+3. Launch a PR 
+4. Wait for it to get reviewed, Relax, Drink some coffee
+5. If PR is merged, You've contributed successfully to the project.
+
+Thank you for contributing.
