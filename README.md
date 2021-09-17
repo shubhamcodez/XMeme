@@ -31,7 +31,7 @@ Run live-server
 
 ## Instructions to Contribute to Open Meme Project:
 
-1. Fork the repository
+1. Fork the repository (from branch v2.0)
 2. Make changes, run tests and make sure it's running people
 3. Launch a PR 
 4. Wait for it to get reviewed, Relax, Drink some coffee
