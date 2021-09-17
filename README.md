@@ -4,10 +4,10 @@ Frontend : HTML, CSS, js
 
 npm Packages : express, cors, monk, express-rate-limit, morgan, nodemon.
 
-OPMeme is a open-source meme machine for everybody. A platform that lets you upload and share memes built by Meme lovers for Meme lovers while rewarding the creators for making us laugh.
+Memextream is a open-source meme machine for everybody. A platform that lets you upload and share memes built by Meme lovers for Meme lovers while rewarding the creators for making us laugh.
 
 
-<h2 style="text-align: center; padding-top: 30px;">Features of OPMeme 1. 0. 0</h2>
+<h2 style="text-align: center; padding-top: 30px;">Features of Memextream 1. 0. 0</h2>
         <ul style="text-align: center;">
             <li>Upload Memes by entering URL</li>
             <li>GET method to display all memes on endpoint /memes/</li>
