@@ -17,17 +17,15 @@ OPMeme is a open-source meme machine for everybody. A platform that lets you upl
 
 
 ## Backend functions:
-
-### Run Backend 
+Run Backend 
 >npm start
 
-### Test Backend
+Test Backend
 >nodemon test
 
 
 ## Frontend Functions:
-
-### Run live-server
+Run live-server
 >liveserver
 
 
