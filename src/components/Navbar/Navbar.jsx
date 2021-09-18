@@ -70,7 +70,7 @@ export default function SearchAppBar() {
           <Container sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}>
             <img src={logoLight} alt="logo" width="150" />
           </Container>
-          <Search>
+          <Search sx={{marginRight: "16px"}}>
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>

@@ -40,7 +40,7 @@ export default function RecipeReviewCard() {
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            R
+            N
           </Avatar>
         }
         action={
@@ -54,7 +54,7 @@ export default function RecipeReviewCard() {
       <CardMedia
         component="img"
         image="https://humornama.com/wp-content/uploads/2020/11/Saala-Mereko-Itna-Chhota-Diya-meme-template-of-Phir-Hera-Pheri-608x342.jpg"
-        alt="Paella dish"
+        alt="Babu Rao Meme"
       />
       <CardContent>
         <Typography variant="body2" color="text.secondary">
