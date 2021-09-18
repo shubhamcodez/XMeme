@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Container } from "@mui/material";
+import { Grid } from "@mui/material";
 import { Navbar, Sidebar, SecondarySidebar, MainContentWindow } from "./imports";
 
 function Home() {
