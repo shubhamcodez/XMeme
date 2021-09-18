@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Container } from "@mui/material";
-import { Navbar, Sidebar, SecondarySidebar } from "./imports";
+import { Navbar, Sidebar, SecondarySidebar, MainContentWindow } from "./imports";
 
 function Home() {
   return (
@@ -22,9 +22,7 @@ function Home() {
           <Sidebar />
         </Grid>
         <Grid item xs={0} sm={12} lg={6}>
-          <Container sx={{ backgroundColor: "green", height: "100%" }}>
-            2
-          </Container>
+          <MainContentWindow />
         </Grid>
         <Grid item xs={0} sm={0} lg={3}>
           <SecondarySidebar />

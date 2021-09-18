@@ -10,7 +10,7 @@ import {
 
 function Sidebar() {
   const [authorName, setAuthorName] = useState("");
-  const [description, setDescription] = useState("")
+  const [description, setDescription] = useState("");
   return (
     <aside style={{ padding: "0px 16px" }}>
       <Typography
@@ -20,7 +20,7 @@ function Sidebar() {
           textTransform: "capitalize",
           fontWeight: "bold",
           marginBottom: "24px",
-          userSelect: "none"
+          userSelect: "none",
         }}
       >
         add new
@@ -36,6 +36,7 @@ function Sidebar() {
             sx={{ outline: "none" }}
             fullWidth={true}
             color="primary"
+            autoComplete={false}
             required
           />
         </FormControl>
@@ -47,7 +48,9 @@ function Sidebar() {
             onChange={(event) => setDescription(event.target.value)}
             label="Description"
             sx={{ outline: "none" }}
-            fullWidth={true}
+            multiline
+            fullWidth
+            autoComplete={false}
             required
           />
         </FormControl>
