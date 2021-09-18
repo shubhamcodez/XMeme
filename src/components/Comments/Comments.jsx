@@ -1,10 +1,17 @@
 import React from "react";
-import { Card, CardContent, CardHeader, Avatar, Typography, Divider } from "@mui/material";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  Avatar,
+  Typography,
+  Divider,
+} from "@mui/material";
 import { red } from "@mui/material/colors";
 
 function Comments() {
   return (
-    <Card sx={{boxShadow: 0, marginBottom: "16px"}}>
+    <Card sx={{ boxShadow: 0, marginBottom: "16px" }}>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">

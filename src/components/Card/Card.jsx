@@ -6,7 +6,7 @@ import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import Collapse from "@mui/material/Collapse";
-import Box from "@mui/material/Box"
+import Box from "@mui/material/Box";
 import Avatar from "@mui/material/Avatar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
@@ -61,8 +61,15 @@ export default function RecipeReviewCard() {
           Babu Rao Meme
         </Typography>
       </CardContent>
-      <CardActions sx={{display:"flex", alignItems: "center", justifyContent: "space-between"}} disableSpacing>
-        <Box sx={{width: "100%"}}>
+      <CardActions
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+        }}
+        disableSpacing
+      >
+        <Box sx={{ width: "100%" }}>
           <IconButton aria-label="add to favorites">
             <FavoriteIcon />
           </IconButton>
@@ -82,8 +89,8 @@ export default function RecipeReviewCard() {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Comments/>
-          <Comments/>
+          <Comments />
+          <Comments />
         </CardContent>
       </Collapse>
     </Card>

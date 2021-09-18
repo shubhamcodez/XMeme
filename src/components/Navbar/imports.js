@@ -1,3 +1,3 @@
-import logoLight from "../../assets/logo-light.png"
+import logoLight from "../../assets/logo-light.png";
 
-export {logoLight};
+export { logoLight };

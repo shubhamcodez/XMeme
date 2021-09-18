@@ -128,7 +128,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 export default function SearchAppBar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="fixed" sx={{backgroundColor: "#F2B705"}}>
+      <AppBar position="fixed" sx={{ backgroundColor: "#F2B705" }}>
         <Toolbar>
           <Container sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}>
             <img src={logoLight} alt="logo" width="150" />

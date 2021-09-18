@@ -1,6 +1,11 @@
 import React from "react";
 import { Grid } from "@mui/material";
-import { Navbar, Sidebar, SecondarySidebar, MainContentWindow } from "./imports";
+import {
+  Navbar,
+  Sidebar,
+  SecondarySidebar,
+  MainContentWindow,
+} from "./imports";
 
 function Home() {
   return (

@@ -1,17 +1,17 @@
-.about-logo{
-    height: 7%;
-    width: 7%;
-    margin: 30px 45%;
-    border-radius: 10px;
-    padding: 1px 1px;
-    box-shadow: 2px 2px 2px 1px rgba(255, 251, 15, 0.2);
+.about-logo {
+  height: 7%;
+  width: 7%;
+  margin: 30px 45%;
+  border-radius: 10px;
+  padding: 1px 1px;
+  box-shadow: 2px 2px 2px 1px rgba(255, 251, 15, 0.2);
 }
 
-.content{
-    margin: 0 15%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.content {
+  margin: 0 15%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.a-link{
-    margin: 0 2%;
+.a-link {
+  margin: 0 2%;
 }
