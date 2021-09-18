@@ -1,4 +1,5 @@
-.Main{
-font-family:Verdana, Geneva, Tahoma, sans-serif;
-text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
