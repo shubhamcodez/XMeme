@@ -1,83 +1,12 @@
-// import React, { useState, useEffect } from 'react';
-// import { Button } from './Button';
-// import { Link } from 'react-router-dom';
-// import './Navbar.css';
-
-// function Navbar() {
-//   const [click, setClick] = useState(false);
-//   const [button, setButton] = useState(true);
-
-//   const handleClick = () => setClick(!click);
-//   const closeMobileMenu = () => setClick(false);
-
-//   const showButton = () => {
-//     if (window.innerWidth <= 960) {
-//       setButton(false);
-//     } else {
-//       setButton(true);
-//     }
-//   };
-
-//   useEffect(() => {
-//     showButton();
-//   }, []);
-
-//   window.addEventListener('resize', showButton);
-
-//   return (
-//     <>
-//       <nav className='navbar'>
-//         <div className='navbar-container'>
-//           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-//             <img className='logo' src="..\logo\memextreamBanner.jpg" alt='404'/>
-//           </Link>
-//           <div className='menu-icon' onClick={handleClick}>
-//             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-//           </div>
-//           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-//             <li className='nav-item'>
-//               <Link to='/' className='nav-links' onClick={closeMobileMenu}> Home</Link>
-//             </li>
-//             <li className='nav-item'>
-//               <Link to='/AboutUs' className='nav-links' onClick={closeMobileMenu}>About Us</Link>
-//             </li>
-//           </ul>
-//           {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
-//         </div>
-//       </nav>
-//     </>
-//   );
-// }
-
-// export default Navbar;
-
-// import React from "react";
-// import {logoLight} from "./imports.js"
-// import { Container, Box, Typography } from "@mui/material";
-
-// function Navbar() {
-//   return (
-//     <div>
-//       <Container
-//         maxWidth="xl"
-//         disableGutters="true"
-//         sx={{ backgroundColor: "#F2B705", height: "80px"}}
-//       >
-//         <Box sx={{ display: "flex" ,justifyContent: "space-between"}}>
-//           <img src={logoLight} />
-//         </Box>
-//       </Container>
-//     </div>
-//   );
-// }
-
-// export default Navbar;
-
 import * as React from "react";
 import { styled, alpha } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
+import Menu from "@mui/material/Menu"
+import MenuItem from "@mui/material/MenuItem"
 import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton"
+import AccountCircle from '@mui/icons-material/AccountCircle';
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
 import { logoLight } from "./imports.js";
@@ -126,6 +55,14 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 export default function SearchAppBar() {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const handleMenu = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="fixed" sx={{ backgroundColor: "#F2B705" }}>
@@ -142,6 +79,36 @@ export default function SearchAppBar() {
               inputProps={{ "aria-label": "search" }}
             />
           </Search>
+          <div>
+              <IconButton
+                size="large"
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={handleMenu}
+                color="inherit"
+              >
+                <AccountCircle />
+              </IconButton>
+              <Menu
+                id="menu-appbar"
+                anchorEl={anchorEl}
+                anchorOrigin={{
+                  vertical: 'top',
+                  horizontal: 'right',
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: 'top',
+                  horizontal: 'right',
+                }}
+                open={Boolean(anchorEl)}
+                onClose={handleClose}
+              >
+                <MenuItem onClick={handleClose}>Profile</MenuItem>
+                <MenuItem onClick={handleClose}>My account</MenuItem>
+              </Menu>
+            </div>
         </Toolbar>
       </AppBar>
     </Box>

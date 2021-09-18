@@ -5,7 +5,7 @@ import React from "react";
 function SecondarySidebar() {
   return (
     <aside style={{ padding: "0px 16px" }}>
-      <Box
+      {/* <Box
         sx={{
           width: "100%",
           display: "flex",
@@ -28,7 +28,7 @@ function SecondarySidebar() {
         >
           hello, guest
         </Typography>
-      </Box>
+      </Box> */}
       <Box sx={{ width: "100%", marginBottom: "32px" }}>
         <Typography
           variant="h4"
