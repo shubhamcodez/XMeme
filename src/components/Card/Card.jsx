@@ -17,6 +17,9 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import DeleteIcon from "@mui/icons-material/Delete";
 import Comments from "../Comments/Comments";
 
+
+//Only top 3-4 comments to be displayed.
+
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
   return <IconButton {...other} />;
@@ -36,7 +39,7 @@ export default function RecipeReviewCard() {
   };
 
   return (
-    <Card sx={{ marginBottom: "32px" }}>
+    <Card className = 'card-container'>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
@@ -69,7 +72,7 @@ export default function RecipeReviewCard() {
         }}
         disableSpacing
       >
-        <Box sx={{ width: "100%" }}>
+        <Box className='box'>
           <IconButton aria-label="add to favorites">
             <FavoriteIcon />
           </IconButton>

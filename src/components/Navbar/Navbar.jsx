@@ -9,7 +9,7 @@ import IconButton from "@mui/material/IconButton";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
-import { logoLight } from "./imports.js";
+import { logo } from "./imports.js";
 import { Container } from "@mui/material";
 
 const Search = styled("div")(({ theme }) => ({
@@ -68,7 +68,7 @@ export default function SearchAppBar() {
       <AppBar position="fixed" sx={{ backgroundColor: "#F2B705" }}>
         <Toolbar>
           <Container sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}>
-            <img src={logoLight} alt="logo" width="150" />
+            <img src={logo} alt="logo" width="180" />
           </Container>
           <Search sx={{ marginRight: "16px" }}>
             <SearchIconWrapper>
