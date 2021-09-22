@@ -1,47 +1,14 @@
 import { Button, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
+import './SecondarySidebar.css';
 
 function SecondarySidebar() {
   return (
     <aside style={{ padding: "0px 16px" }}>
-      {/* <Box
-        sx={{
-          width: "100%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "flex-start",
-          marginBottom: "32px",
-        }}
-      >
-        <Box
-          sx={{
-            width: "60px",
-            height: "60px",
-            borderRadius: "50%",
-            backgroundColor: "black",
-          }}
-        />
-        <Typography
-          variant="h6"
-          sx={{ textTransform: "capitalize", marginLeft: "16px" }}
-        >
-          hello, guest
-        </Typography>
-      </Box> */}
-      <Box sx={{ width: "100%", marginBottom: "32px" }}>
-        <Typography
-          variant="h4"
-          color="initial"
-          sx={{
-            textTransform: "capitalize",
-            fontWeight: "bold",
-            marginBottom: "24px",
-            userSelect: "none",
-          }}
-        >
-          Follow Creators
-        </Typography>
+      {}
+      <Box className = 'panel-container'>
+      <h2 className = 'panel-header'>Top Creators</h2>
         <Box
           sx={{
             width: "100%",

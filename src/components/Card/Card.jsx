@@ -40,61 +40,23 @@ export default function RecipeReviewCard() {
 
   return (
     <Card className = 'card-container'>
-      <CardHeader
-        avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            N
-          </Avatar>
-        }
-        action={
-          <IconButton aria-label="settings">
-            <DeleteIcon />
-          </IconButton>
-        }
-        title="Neeraj Gupta"
-        subheader="September 18, 2021"
-      />
-      <CardMedia
-        component="img"
-        image="https://humornama.com/wp-content/uploads/2020/11/Saala-Mereko-Itna-Chhota-Diya-meme-template-of-Phir-Hera-Pheri-608x342.jpg"
-        alt="Babu Rao Meme"
-      />
+      <CardHeader avatar={<Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">N</Avatar>} action={<IconButton aria-label="settings"><DeleteIcon /></IconButton>}
+      title="Name PlaceHolder"/>
+      <CardMedia component="img" image="" alt="404"/>
       <CardContent>
-        <Typography variant="body2" color="text.secondary">
-          Babu Rao Meme
-        </Typography>
+        <Typography variant="body2" color="text.secondary"> Babu Rao Meme</Typography>
       </CardContent>
-      <CardActions
-        sx={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-        }}
-        disableSpacing
-      >
+      
+      <CardActions sx={{ display: "flex",alignItems: "center",justifyContent: "space-between",}}disableSpacing>
         <Box className='box'>
-          <IconButton aria-label="add to favorites">
-            <FavoriteIcon />
-          </IconButton>
-          <IconButton aria-label="share">
-            <ShareIcon />
-          </IconButton>
+          <IconButton aria-label="add to favorites"><FavoriteIcon /></IconButton>
+          <IconButton aria-label="share"><ShareIcon /></IconButton>
         </Box>
         <Typography>Comments</Typography>
-        <ExpandMore
-          expand={expanded}
-          onClick={handleExpandClick}
-          aria-expanded={expanded}
-          aria-label="show more"
-        >
-          <ExpandMoreIcon />
-        </ExpandMore>
+        <ExpandMore expand={expanded} onClick={handleExpandClick} aria-expanded={expanded} aria-label="show more"><ExpandMoreIcon /></ExpandMore>
       </CardActions>
-      <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent>
-          <Comments />
-          <Comments />
-        </CardContent>
+
+      <Collapse in={expanded} timeout="auto" unmountOnExit><CardContent><Comments /></CardContent>
       </Collapse>
     </Card>
   );

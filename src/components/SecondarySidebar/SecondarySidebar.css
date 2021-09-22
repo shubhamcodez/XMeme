@@ -1,0 +1,11 @@
+.panel-container{
+width: 100%; 
+margin-bottom:32px;
+}
+
+.panel-header{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    font-weight: 700;
+    padding-bottom: 10px;
+}

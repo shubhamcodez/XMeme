@@ -11,7 +11,7 @@ import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
 import { logo } from "./imports.js";
 import { Container } from "@mui/material";
-
+import './Navbar.css'
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
   borderRadius: theme.shape.borderRadius,
@@ -41,7 +41,6 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   color: "inherit",
   "& .MuiInputBase-input": {
     padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
     paddingLeft: `calc(1em + ${theme.spacing(4)})`,
     transition: theme.transitions.create("width"),
     width: "100%",
@@ -65,7 +64,7 @@ export default function SearchAppBar() {
   };
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="fixed" sx={{ backgroundColor: "#F2B705" }}>
+      <AppBar className='navbar'>
         <Toolbar>
           <Container sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}>
             <img src={logo} alt="logo" width="180" />
