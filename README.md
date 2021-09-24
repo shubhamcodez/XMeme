@@ -23,3 +23,10 @@ Run App
 Thank you for contributing.
 
 ## Issues
+
+1.Once we click on about on the website the option contact is disappearing we need to go back to home page in order to click on contact.  
+2. You can add the option to comment on the memes given on the website, so that others can comment and tag their friends.  
+3. The memes can be accomdated side by side giving space for more memes.  
+4. The option to sort and search memes based on the person who created them or relevant tags.  
+5. You can also provide an option of sharing the memes from the website thorugh a link.  
+
