@@ -20,3 +20,5 @@ Run App
 5. If PR is merged, You've contributed successfully to the project.
 
 Thank you for contributing.
+
+## Issues
