@@ -16,7 +16,7 @@ Run App
 
 1. Fork the repository
 2. Make changes, run tests and make sure it's running people
-3. Launch a PR 
+3. Launch a PR and give repo a star.
 4. Wait for it to get reviewed, Relax, Drink some coffee
 5. If PR is merged, You've contributed successfully to the project.
 
